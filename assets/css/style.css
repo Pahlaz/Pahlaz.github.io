@@ -1,0 +1,265 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Fira Code';
+}
+a{
+	text-decoration: none;
+}
+.visible{
+	display: table;
+}
+nav{
+	width: 100%;
+	height: 50px;
+	color: white;
+	background: #212121;
+	z-index: 2;
+	border-bottom: 2px solid #eee;
+}
+.logo{
+	cursor: pointer;
+	position: absolute;
+	margin-left: 20px;
+}
+.logo, nav li{
+	height: 50px;
+	display: inline-block;
+}
+.logo h1{
+	padding: 10px 0px;
+}
+nav img{
+	height: 30px;
+	padding: 10px;
+}
+nav ul{
+	height: 50px;
+	float: right;
+	transition: display .3s ease-in-out;
+}
+nav li {
+	list-style: none;
+	line-height: 50px;
+}
+nav li a{
+	height: 50px;
+	padding: 15px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: white;
+	transition: background .3s ease-in;
+}
+nav li a:hover{
+	background: green;
+	border-bottom: 4px solid darkgreen;
+	color: white;
+}
+
+/* Toggle Button */
+.toggle-btn{
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	margin-right: 10px;
+	box-sizing: border-box;
+	top: 0px;
+	right: 0px;
+	display: none;
+	position: absolute;
+	cursor: pointer;
+}
+.toggle-btn span, .toggle-btn span:before, .toggle-btn span:after{
+	width: 30px;
+	height: 2px;
+	background: white;
+	position: absolute;
+	transition: width .3s ease-in-out, transform .3s ease-in-out, background .3s ease-in-out;
+}
+.toggle-btn span{
+	top: 50%;
+}
+.toggle-btn span:before{
+	content: '';
+	top: -10px;
+}
+.toggle-btn span:after{
+	content: '';
+	top: 10px;
+}
+.toggle-btn.onclick span{
+	background: none;
+}
+.toggle-btn.onclick span:before{
+	transform: translateY(10px) rotate(45deg);
+}
+.toggle-btn.onclick span:after{
+	transform: translateY(-10px) rotate(-45deg);
+}
+
+header, .dev, .before-footer{
+	width: 100%;
+	height: 600px; 
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
+	transition: height .5s ease-in-out, background-size .5s ease-in-out;
+}
+header{
+	background: url('../img/divyank.jpg') no-repeat;
+	background-size: cover;
+}
+.dev{
+	background: url('../img/dev.jpg') no-repeat;	
+	background-size: cover;
+}
+.before-footer{
+	background: url('../img/connect.jpg') no-repeat;	
+	background-size: cover;	
+}
+header:after, .dev:after, .dev:before, .before-footer:before, .before-footer:after{
+	content: '';
+	width: 100%;
+	height: 100px;
+	background: #eee;
+	position: absolute;
+	z-index: 1;
+  transform: scaleX(1.5) rotate(-6deg);
+}
+header:after, .dev:after, .before-footer:after{
+	bottom: -50px;
+}
+.dev:before, .before-footer:before{
+	top: -50px;
+}
+.before-footer:after{
+	background: #232323;
+}
+
+.content{
+	padding: 20px;
+	color: #e8532c;
+	background: #eee;
+}
+
+/* Info */
+.info h1{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.info p{
+	color: #232323;
+	margin-top: 10px;
+	padding: 10px 70px;
+}
+.info hr{
+	width: 50%;
+	margin: 0px auto;
+}
+
+.dev-container{
+	overflow: hidden;
+}
+.item{
+	width: 60%;
+	margin: 0 auto 50px auto;
+	box-sizing: border-box;
+	border: 1px solid #212121;
+	opacity:0;
+	z-index: 1;
+}
+.item h2{
+	text-align: center;
+}
+.item img{ 
+	width: 100%;
+	box-sizing:border-box;
+	transition: transform .3s ease-in-out;
+}
+.item a{
+	display: block;
+}
+
+footer{
+	padding: 20px;
+	color: white;
+	background: #232323;
+	box-sizing: border-box;
+}
+.social-links{
+	height: 50px;
+}
+.social-links img{
+	width: 50px;
+	height: 50px;
+	opacity: .5;
+	cursor: pointer;
+	transition: opacity .3s linear;
+}
+.social-links img:hover{
+	opacity: 1;
+}
+footer h1, .copyright{
+	margin: 20px 0;
+}
+.copyright{
+	font-size: 10px;
+}
+
+@media screen and (max-width: 768px){
+	*{
+		font-size: 16px;
+	}
+	h1{
+		font-size: 24px;
+	}
+	header, .dev, .before-footer{
+		height: 400px;
+	}
+	.toggle-btn{
+		display: block;
+	}
+	nav ul{
+		width: 100%;
+		height: 100%;
+		padding: 50px 10px 10px 10px;
+		background: rgba(0, 0, 0, 0.6);
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+		float: none;
+		display: none;
+	}
+	nav li{
+		display: block;
+		margin-bottom: 10px;
+		border: 1px solid rgba(0,0,0,.7);
+	}
+	nav li a{
+		color: white;
+		font-size: 20px;
+		padding: 0px;
+		text-align: center;
+		display: block;
+		line-height: 50px;
+	}
+}
+@media screen and (max-width: 425px){
+	*{
+		font-size: 14px;
+	}
+	h1{
+		font-size: 20px;
+	}
+	header, .dev, .before-footer{
+		height: 250px;
+	}
+	nav li a{
+		font-size: 16px;
+	}
+	.social-links img{
+		width: 35px;
+		height: 35px;
+	}
+	.info p{
+		padding: 10px 40px;
+	}
+}
