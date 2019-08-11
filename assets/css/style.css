@@ -161,7 +161,7 @@ header:after, .dev:after, .before-footer:after{
 	overflow: hidden;
 }
 .item{
-	width: 60%;
+	width: 85%;
 	margin: 0 auto 50px auto;
 	box-sizing: border-box;
 	border: 1px solid #212121;
