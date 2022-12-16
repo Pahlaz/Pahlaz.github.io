@@ -1,24 +1,24 @@
 {
-  "name": "Pahlaz.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Pahlaz/Pahlaz.github.io.git"
-  },
-  "author": "Divyank Pahlazani",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Pahlaz/Pahlaz.github.io/issues"
-  },
-  "homepage": "https://github.com/Pahlaz/Pahlaz.github.io#readme",
-  "devDependencies": {
-    "browser-sync": "^2.13.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1"
-  }
+	"name": "pahlaz.github.io",
+	"version": "1.1.0",
+	"description": "",
+	"main": "gulpfile.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Pahlaz/Pahlaz.github.io.git"
+	},
+	"author": "Divyank Pahlazani",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Pahlaz/Pahlaz.github.io/issues"
+	},
+	"homepage": "https://github.com/Pahlaz/Pahlaz.github.io#readme",
+	"devDependencies": {
+		"browser-sync": "^2.13.0",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^3.1.1"
+	}
 }

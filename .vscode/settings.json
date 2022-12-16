@@ -1,0 +1,20 @@
+{
+	"css.lint.important": "warning",
+	"css.lint.importStatement": "warning",
+	"editor.tabSize": 2,
+	"editor.wordWrap": "on",
+	"editor.fontSize": 16,
+	"javascript.preferences.quoteStyle": "single",
+	"eslint.lintTask.enable": true,
+	"eslint.run": "onSave",
+	"eslint.validate": ["javascript"],
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"prettier.enable": true,
+	"editor.insertSpaces": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true,
+		"source.organizeImports": true
+	},
+	"sort-imports.on-save": true
+}
