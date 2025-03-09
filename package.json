@@ -2,9 +2,10 @@
 	"name": "pahlaz.github.io",
 	"version": "1.1.0",
 	"description": "",
-	"main": "gulpfile.js",
+	"main": "index.ts",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "bun index.ts",
+		"dev": "bun run --watch index.ts"
 	},
 	"repository": {
 		"type": "git",
@@ -17,8 +18,9 @@
 	},
 	"homepage": "https://github.com/Pahlaz/Pahlaz.github.io#readme",
 	"devDependencies": {
-		"browser-sync": "^2.13.0",
-		"gulp": "^3.9.1",
-		"gulp-autoprefixer": "^3.1.1"
+		"@types/bun": "^1.2.4"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
 	}
 }

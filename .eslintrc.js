@@ -8,18 +8,11 @@ module.exports = {
 	},
 	extends: [
 		'eslint:recommended',
-		'plugin:react/recommended',
-		'plugin:react-hooks/recommended',
 		'plugin:jsx-a11y/recommended',
 		'plugin:prettier/recommended',
 		'next/core-web-vitals',
 		'prettier',
 	],
-	settings: {
-		react: {
-			version: 'detect', // Automatically detect the react version
-		},
-	},
 	rules: {
 		'no-console': 'warn',
 		'no-sync': 'warn',
@@ -27,8 +20,6 @@ module.exports = {
 		'no-unused-vars': 'warn',
 		quotes: ['warn', 'single'],
 		'prettier/prettier': ['warn', {}, { usePrettierrc: true }], // Use our .prettierrc file as source
-		'react/react-in-jsx-scope': 'off',
-		'react/prop-types': 'warn',
 		'jsx-a11y/anchor-is-valid': [
 			'error',
 			{
@@ -38,7 +29,6 @@ module.exports = {
 			},
 		],
 		'import/no-anonymous-default-export': 'off',
-		'react/display-name': 'warn',
 		'no-control-regex': 'warn',
 		'no-restricted-imports': [
 			'error',
@@ -52,6 +42,5 @@ module.exports = {
 		'no-await-in-loop': 'warn',
 		'require-atomic-updates': 'warn',
 		'no-return-await': 'warn',
-		'react/no-unescaped-entities': 'warn',
 	},
 }
